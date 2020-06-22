@@ -1,0 +1,25 @@
+.UserCard__container {
+  height: 600px;
+  padding: 10px;
+  display: grid;
+  justify-content: center;
+}
+
+.UserCard__action-area {
+  display: none;
+  height: 100%;
+}
+
+.UserCard__media {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  background: green;
+  box-shadow: inset 0 0 5px black;
+  border-radius: 5px;
+}
+
+.UserCard__actions {
+  height: 100%;
+}

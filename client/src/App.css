@@ -28,11 +28,40 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App__results-container {
+  height: max-content;
+  width: 100vw;
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  column-gap: 5px;
+  grid-gap: 10px;
+  background: pink;
+}
+
+.App__title {
+  background: rgb(36,42,46);
+  padding: 10px 0;
+}
+
+.App__title > h1{
+  font-weight: bold;
+  animation: grow 0.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.App__buttonGroup {
+  margin: 10px;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1.01, 0.9);
+    color: lightblue;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: scale(1, 1);
+    color: blue;
   }
 }
